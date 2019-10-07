@@ -9,7 +9,7 @@ import rospy
 from std_msgs.msg import Int8
 from std_msgs.msg import Bool
 
-def EntradaDeTeclado():
+def keyboard_input():
     pygame.init()
     screen_size = (400, 200)
     screen = pygame.display.set_mode(screen_size)
@@ -80,6 +80,6 @@ def EntradaDeTeclado():
 
 if __name__ == '__main__':
     try:
-        EntradaDeTeclado()
+        keyboard_input()
     except rospy.ROSInterruptException:
         pass

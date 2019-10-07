@@ -4,7 +4,7 @@ import rospy
 from std_msgs.msg import Int8
 from std_msgs.msg import Bool
 
-class ControladorDeMotor(object):
+class MotorControl(object):
     """docstring for ControladorDeMotor"""
     def __init__(self):
         rospy.init_node('ControladorDeMotor', anonymous=True)
@@ -64,11 +64,11 @@ class ControladorDeMotor(object):
 
 
 # ======================================================================================================================
-def controlador_de_motor():
-    controlador_de_motor = ControladorDeMotor().main_loop()
+def motor_control():
+    motor_control = MotorControl().main_loop()
 
 if __name__ == '__main__':
     try:
-        controlador_de_motor()
+        motor_control()
     except rospy.ROSInterruptException:
         pass
