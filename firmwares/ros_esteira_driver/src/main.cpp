@@ -100,9 +100,11 @@ void loop()
       else{
         if(spin_R){
           PORTC = 0b00101101;
+          PORTD = 0x00;
         }
         else{
-          PORTC = 0b00111011;
+          PORTC = 0b00011011;
+          PORTD = 0xFF;
         }         
       }
       //---------------------------------------
@@ -112,9 +114,11 @@ void loop()
       else{
         if(spin_L){
           PORTB = 0b00101101;
+          PORTD = 0x00;
         }
         else{
-          PORTB = 0b00111011;
+          PORTB = 0b00011011;
+          PORTD = 0xFF;
         }        
       }
       //---------------------------------------
