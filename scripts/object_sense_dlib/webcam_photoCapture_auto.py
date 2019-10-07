@@ -1,4 +1,10 @@
+#!/usr/bin/env python
+import roslib
 import cv2
+import rospy
+from std_msgs.msg import String
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge, CvBridgeError
 
 class AutoPhotoCapture(object):
 
