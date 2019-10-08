@@ -53,10 +53,15 @@ class AutoPhotoCapture(object):
         self.pub_img.publish(self.bridge.cv2_to_imgmsg(frame))
 
     def main_loop(self):
-        for _ in range(10):
+        for _ in range(20):
             frame = self.get_image()
             self.save_image(frame)
-            self.next_pos()	
+            self.next_pos()
+
+        for _ in range(20):
+            frame = self.get_image()
+            self.save_image(frame)
+            self.back_pos() 	
 
 # ======================================================================================================================
 def webcam_photoCapture_auto():
