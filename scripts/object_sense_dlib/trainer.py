@@ -37,8 +37,8 @@ print("ok!")
 
 #===============================================================================
 print("path load ...")
-dataset_folder_path = "./image_dataset_3"
-training_xml_path = os.path.join(dataset_folder_path, "robotArmGripper_imglab_3.xml")
+dataset_folder_path = "./../../dataset/dataset_1"
+training_xml_path = os.path.join(dataset_folder_path, "ifsc_logo.xml")
 svn_path = os.path.join(dataset_folder_path, "detector.svm")
 landmarks_path = os.path.join(dataset_folder_path, "landmarks.dat")
 
